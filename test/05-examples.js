@@ -118,7 +118,7 @@ const failingExamples = [
 ];
 
 describe("examples", function () {
-  for (var i = 0, len = examples.length; i < len; ++i) {
+  for (let i = 0, len = examples.length; i < len; ++i) {
     (function (name) {
       it("should run the " +name+ " example.", function (done) {
         this.timeout(2000);
@@ -134,7 +134,7 @@ describe("examples", function () {
       });
     })(examples[i]);
   }
-  for (var i = 0, len = failingExamples.length; i < len; ++i) {
+  for (let i = 0, len = failingExamples.length; i < len; ++i) {
     (function (name) {
       it("should fail the " +name+ " example.", function (done) {
         this.timeout(2000);

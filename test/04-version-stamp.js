@@ -101,7 +101,7 @@ describe("version-stamp VersionStamp", function () {
     var filename;
     before("create a temporary build file", function (done) {
       filename = path.normalize(".build");
-      fs.unlink(filename, function (err) {
+      fs.unlink(filename, function () {
         fs.writeFile(filename, "1", function (err) {
           done(err);
         });
