@@ -1,6 +1,6 @@
 "use strict";
 
-var webpack = require("webpack");
+//var webpack = require("webpack");
 var path = require("path");
 var WebpackChromeDevPlugin = require("../..");
 var webpackMajorVersion = require("webpack/package.json").version.split(".")[0];
